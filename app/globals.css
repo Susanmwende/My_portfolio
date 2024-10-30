@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(-45deg, rgb(32, 142, 71), #163904, #4d6f16, #07735a);
-  background-size: 500% 500%;
+  background-size: 500% 900%;
   animation: gradient 15s ease infinite;
 }
 
