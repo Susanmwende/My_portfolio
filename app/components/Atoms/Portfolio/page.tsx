@@ -1,1 +1,0 @@
-<img className="opacity 0.1"src ="images/susan.png" alt="susan"/>
