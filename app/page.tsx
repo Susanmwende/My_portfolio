@@ -2,6 +2,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import { Code, Palette, Coffee, Rocket,Send,Mail,Phone,MapPin,Clock } from 'lucide-react';
+import Image from 'next/image'; 
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </div>
       
       <div className="flex items-center justify-center gap-52 w-full pb-32 mt-24">
-        <img
+        <Image
           src="images/susanmasaku.jpg"
           alt="Susan Masaku"
           className="w-[400px] h-[400px] rounded-full mt-12"
@@ -42,13 +43,13 @@ export default function Home() {
             </a>
             <div className="flex">
               <a href="https://www.linkedin.com/in/susan-masaku-5506362b4/" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin.png" alt="LinkedIn" className="w-8 h-8 mx-2 glow" />
+                <Image src="images/linkedin.png" alt="LinkedIn" className="w-8 h-8 mx-2 glow" />
               </a>
               <a href="https://github.com/Susanmwende" target="_blank" rel="noopener noreferrer">
-                <img src="images/github.png " alt="GitHub" className="w-8 h-8 mx-2 glow" />
+                <Image src="images/github.png " alt="GitHub" className="w-8 h-8 mx-2 glow" />
               </a>
               <a href="https://x.com/Susan_masaku" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.png" alt="Twitter" className="w-8 h-8 mx-2 glow" />
+                <Image src="images/twitter.png" alt="Twitter" className="w-8 h-8 mx-2 glow" />
               </a>
             </div>
           </div>
@@ -101,7 +102,7 @@ export default function Home() {
             whileHover={{ scale: 1.05 }}
             className=" bg-gray-900 p-6 rounded-2xl shadow-lg backdrop-filter backdrop-blur-lg ml-48 w-[500px] "
           >
-            <img
+            <Image
               src="/images/about-me.png"
               alt="Your Name"
               className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-lg"
@@ -157,7 +158,7 @@ export default function Home() {
           { title: "DOM Manipulation", icon: "images/dom-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -175,7 +176,7 @@ export default function Home() {
           { title: "Forms & Templates", icon: "images/form-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -193,7 +194,7 @@ export default function Home() {
           { title: "Agile", icon: "images/agile-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -211,7 +212,7 @@ export default function Home() {
           { title: "Adobe Photoshop", icon: "images/photoshop-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -263,7 +264,7 @@ export default function Home() {
     }
   ].map(item => (
     <div key={item.skill} className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-900 border border-green-500 shadow-green-500 p-6 flex flex-col items-center transition-transform hover:scale-105 ">
-      <img src={item.icon} alt={item.skill} className="w-16 h-16 mb-4" />
+      <Image src={item.icon} alt={item.skill} className="w-16 h-16 mb-4" />
       <div className="px-6 py-4 flex flex-col h-full">
         <div className="font-bold text-xl mb-2 text-center text-white">{item.skill}</div>
         <p className="text-gray-300 text-base mb-4 flex-grow">
