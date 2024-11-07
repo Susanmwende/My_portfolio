@@ -26,7 +26,7 @@ export default function Home() {
         <div className="pt-20">
           <h1 className="text-white text-center font-sans text-4xl font-dejavu typed-out">
             <span className="text-white">Hi</span> 
-            <span className="text-white"> I'm</span> 
+            <span className="text-white"> I am</span> 
             <span className="text-white"> Susan Masaku</span> 
             <span className="text-yellow-500"> A Software Developer</span>
           </h1>
@@ -77,7 +77,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-lg text-white "
             >
-              Hi there! I'm a passionate creator at the intersection of design and technology. With a keen eye for aesthetics and a love for clean code, I craft digital experiences that are both beautiful and functional.
+              Hi there! I am a passionate creator at the intersection of design and technology. With a keen eye for aesthetics and a love for clean code, I craft digital experiences that are both beautiful and functional.
             </motion.p>
             <motion.p 
               initial={{ opacity: 0, x: -20 }}
@@ -93,7 +93,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-lg text-white"
             >
-              When I'm not coding or pushing pixels, you'll find me exploring new design trends, tinkering with the latest web technologies, or seeking inspiration in the world around me. Let's create something amazing together!
+              When I am not coding or pushing pixels, you will find me exploring new design trends, tinkering with the latest web technologies, or seeking inspiration in the world around me. Let us create something amazing together!
             </motion.p>
           </div>
 
@@ -305,7 +305,7 @@ export default function Home() {
         >
           <h1 className="font-bold text-5xl text-white mb-4">Get In Touch</h1>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Have a project in mind? Let's work together to create something extraordinary.
+            Have a project in mind? Let us work together to create something extraordinary.
           </p>
         </motion.div>
 
