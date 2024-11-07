@@ -18,11 +18,13 @@ export default function Home() {
       </div>
       
       <div className="flex items-center justify-center gap-52 w-full pb-32 mt-24">
-        <Image
-          src="images/susanmasaku.jpg"
-          alt="Susan Masaku"
-          className="w-[400px] h-[400px] rounded-full mt-12"
-        />
+      <Image 
+        src="/images/susanmasaku.jpg" 
+        alt="Susan Masaku" 
+        width={400} 
+        height={400} 
+        className="rounded-full mt-12" 
+    />
         <div className="pt-20">
           <h1 className="text-white text-center font-sans text-4xl font-dejavu typed-out">
             <span className="text-white">Hi</span> 
@@ -43,13 +45,13 @@ export default function Home() {
             </a>
             <div className="flex">
               <a href="https://www.linkedin.com/in/susan-masaku-5506362b4/" target="_blank" rel="noopener noreferrer">
-                <Image src="images/linkedin.png" alt="LinkedIn" className="w-8 h-8 mx-2 glow" />
+              <Image src="/images/linkedin.png" alt="LinkedIn" width={32} height={32} className="mx-2 glow" />
               </a>
               <a href="https://github.com/Susanmwende" target="_blank" rel="noopener noreferrer">
-                <Image src="images/github.png " alt="GitHub" className="w-8 h-8 mx-2 glow" />
+              <Image src="/images/github.png" alt="GitHub" width={32} height={32} className="mx-2 glow" />
               </a>
               <a href="https://x.com/Susan_masaku" target="_blank" rel="noopener noreferrer">
-                <Image src="images/twitter.png" alt="Twitter" className="w-8 h-8 mx-2 glow" />
+              <Image src="/images/twitter.png" alt="Twitter" width={32} height={32} className="mx-2 glow" />
               </a>
             </div>
           </div>
@@ -105,7 +107,9 @@ export default function Home() {
             <Image
               src="/images/about-me.png"
               alt="Your Name"
-              className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-lg"
+              width={300}
+              height={300}
+              className= " rounded-full mx-auto mb-6 border-4 shadow-green-500  shadow-lg"
             />
             <h2 className="text-3xl font-bold text-white text-center mb-4">Susan Masaku</h2>
             <p className="text-lg text-gray-300 text-center mb-6">
@@ -149,122 +153,153 @@ export default function Home() {
     
     {/* Frontend - JavaScript card */}
     <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
-      <h2 className="text-white text-3xl font-bold mb-6 text-center">Frontend</h2>
-      <div className="grid grid-cols-2 gap-4">
+    <h2 className="text-white text-3xl font-bold mb-6 text-center">Frontend</h2>
+    <div className="grid grid-cols-2 gap-4">
         {[
-          { title: "JavaScript", icon: "images/js-icon.svg" },
-          { title: "Next.js", icon: "images/nextjs-icon.svg" },
-          { title: "React.js", icon: "images/react-icon.svg" },
-          { title: "DOM Manipulation", icon: "images/dom-icon.svg" },
+            { title: "JavaScript", icon: "images/js-icon.svg" },
+            { title: "Next.js", icon: "images/nextjs-icon.svg" },
+            { title: "React.js", icon: "images/react-icon.svg" },
+            { title: "DOM Manipulation", icon: "images/dom-icon.svg" },
         ].map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
-            <h3 className="text-white text-sm font-semibold">{item.title}</h3>
-          </div>
+            <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
+                <Image 
+                    src={item.icon} 
+                    alt={item.title} 
+                    width={48} // Specify width
+                    height={48} // Specify height
+                    className="mb-2" 
+                />
+                <h3 className="text-white text-sm font-semibold">{item.title}</h3>
+            </div>
         ))}
-      </div>
     </div>
-
-    {/* Backend - Django card */}
-    <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
-      <h2 className="text-white text-3xl font-bold mb-6 text-center">Backend</h2>
-      <div className="grid grid-cols-2 gap-4">
-        {[
-          { title: "Django", icon: "images/django-icon.svg"},
-          { title: "Restful APIs", icon: "images/api-icon.svg" },
-          { title: "HTTP Requests", icon: "images/http-icon.svg" },
-          { title: "Forms & Templates", icon: "images/form-icon.svg" },
-        ].map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
-            <h3 className="text-white text-sm font-semibold">{item.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Product Management - Card */}
-    <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
-      <h2 className="text-white text-3xl font-bold mb-6 text-center">Product Management</h2>
-      <div className="grid grid-cols-2 gap-4">
-        {[
-          { title: "Prioritization", icon: "images/prioritize-icon.svg" },
-          { title: "Jira", icon: "images/jira-icon.svg" },
-          { title: "Coda", icon: "images/coda-icon.svg" },
-          { title: "Agile", icon: "images/agile-icon.svg" },
-        ].map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
-            <h3 className="text-white text-sm font-semibold">{item.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Design - Card */}
-    <div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
-      <h2 className="text-white text-3xl font-bold mb-6 text-center">Design</h2>
-      <div className="grid grid-cols-2 gap-4">
-        {[
-          { title: "Figma", icon: "images/figma-icon.svg" },
-          { title: "FigJam", icon: "images/figma-icon.svg" },
-          { title: "Adobe Illustrator", icon: "images/adobe-illustrator-icon.svg" },
-          { title: "Adobe Photoshop", icon: "images/photoshop-icon.svg" },
-        ].map((item) => (
-          <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
-            <h3 className="text-white text-sm font-semibold">{item.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
-  </div>
 </div>
 
+
+    {/* Backend - Django card */}
+   {/* Backend - Django card */}
+<div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
+    <h2 className="text-white text-3xl font-bold mb-6 text-center">Backend</h2>
+    <div className="grid grid-cols-2 gap-4">
+        {[
+            { title: "Django", icon: "/images/django-icon.svg" },
+            { title: "Restful APIs", icon: "/images/api-icon.svg" },
+            { title: "HTTP Requests", icon: "/images/http-icon.svg" },
+            { title: "Forms & Templates", icon: "/images/form-icon.svg" },
+        ].map((item) => (
+            <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
+                <Image 
+                    src={item.icon} 
+                    alt={item.title} 
+                    width={48} // Specify width
+                    height={48} // Specify height
+                    className="mb-2" 
+                />
+                <h3 className="text-white text-sm font-semibold">{item.title}</h3>
+            </div>
+        ))}
+    </div>
+</div>
+
+{/* Product Management - Card */}
+<div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
+    <h2 className="text-white text-3xl font-bold mb-6 text-center">Product Management</h2>
+    <div className="grid grid-cols-2 gap-4">
+        {[
+            { title: "Prioritization", icon: "/images/prioritize-icon.svg" },
+            { title: "Jira", icon: "/images/jira-icon.svg" },
+            { title: "Coda", icon: "/images/coda-icon.svg" },
+            { title: "Agile", icon: "/images/agile-icon.svg" },
+        ].map((item) => (
+            <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
+                <Image 
+                    src={item.icon} 
+                    alt={item.title} 
+                    width={48} // Specify width
+                    height={48} // Specify height
+                    className="mb-2" 
+                />
+                <h3 className="text-white text-sm font-semibold">{item.title}</h3>
+            </div>
+        ))}
+    </div>
+</div>
+
+{/* Design - Card */}
+<div className="bg-gray-900 p-6 rounded-lg shadow-lg border-2 border-green-500 transition-all duration-300 shadow-green-500">
+    <h2 className="text-white text-3xl font-bold mb-6 text-center">Design</h2>
+    <div className="grid grid-cols-2 gap-4">
+        {[
+            { title: "Figma", icon: "/images/figma-icon.svg" },
+            { title: "FigJam", icon: "/images/figma-icon.svg" }, // Ensure different icons for FigJam
+            { title: "Adobe Illustrator", icon: "/images/adobe-illustrator-icon.svg" },
+            { title: "Adobe Photoshop", icon: "/images/photoshop-icon.svg" },
+        ].map((item) => (
+            <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
+                <Image 
+                    src={item.icon} 
+                    alt={item.title} 
+                    width={48} // Specify width
+                    height={48} // Specify height
+                    className="mb-2" 
+                />
+                <h3 className="text-white text-sm font-semibold">{item.title}</h3>
+            </div>
+        ))}
+    </div>
+</div>
+</div>
+</div>
       
   {/* Skills Section */}
 <h1  className="font-bold text-4xl text-white  text-center pb-12">Projects</h1>
-<div id="Projects" className="flex gap-10 justify-center overflow-x-auto scroll-m-10 pb-72 ">
+<div id="Projects" className="flex gap-10 justify-center overflow-x-auto scroll-m-10 pb-72">
   {[
     {
       skill: "UI/UX Design",
       description: "Creating intuitive and beautiful user interfaces with a focus on user experience.",
       icon: "/images/design-icon.svg",
       actions: [
-       { label: "View Designs", link: "https://www.figma.com/design/iMNaty20G5i6aO8h0DImcL/Mwalimu-Sacco-Wireframes?node-id=60-2&node-type=canvas&t=yyDICJ9NUbqJUip2-0", style: "secondary" },
-              { label: "Design Portfolio", link: "https://www.behance.net/susanmasaku", style: "outline" },
-            ]      
+        { label: "View Designs", link: "https://www.figma.com/design/iMNaty20G5i6aO8h0DImcL/Mwalimu-Sacco-Wireframes?node-id=60-2&node-type=canvas&t=yyDICJ9NUbqJUip2-0", style: "secondary" },
+        { label: "Design Portfolio", link: "https://www.behance.net/susanmasaku", style: "outline" },
+      ]      
     },
     {
       skill: "JavaScript",
       description: "Building interactive and dynamic web applications using modern JavaScript.",
       icon: "/images/js-icon.svg",
       actions: [
-              { label: "GitHub Repo", link: "https://github.com/Susanmwende/quizproject.git", style: "secondary" },
-              { label: "Vercel Link", link: "https://quizproject-ten.vercel.app/", style: "outline" }
-            ]   
- },
+        { label: "GitHub Repo", link: "https://github.com/Susanmwende/quizproject.git", style: "secondary" },
+        { label: "Vercel Link", link: "https://quizproject-ten.vercel.app/", style: "outline" }
+      ]   
+    },
     {
       skill: "Kotlin",
       description: "Developing robust and efficient Android applications.",
       icon: "/images/kotlin-icon.svg",
-     actions: [
-              { label: "GitHub Repo", link: "https://github.com/Susanmwende/Fibonacci.git", style: "secondary" },
-              { label: "APK", link: "https://appetize.io/app/android/com.akirachix.fibonacciproject?device=pixel7&osVersion=13.0", style: "outline" }
-            ]
+      actions: [
+        { label: "GitHub Repo", link: "https://github.com/Susanmwende/Fibonacci.git", style: "secondary" },
+        { label: "APK", link: "https://appetize.io/app/android/com.akirachix.fibonacciproject?device=pixel7&osVersion=13.0", style: "outline" }
+      ]
     },
     {
       skill: "Python",
       description: "Creating scalable backend solutions and data analysis tools.",
       icon: "/images/python-icon.svg",
-    actions: [
-              { label: "GitHub Repo", link: "https://github.com/Susanmwende/Django_admin.git", style: "secondary" },
-              { label: "Data Projects", link: "https://github.com/Susanmwende/Backend.git", style: "outline" },
-            ]
+      actions: [
+        { label: "GitHub Repo", link: "https://github.com/Susanmwende/Django_admin.git", style: "secondary" },
+        { label: "Data Projects", link: "https://github.com/Susanmwende/Backend.git", style: "outline" },
+      ]
     }
   ].map(item => (
-    <div key={item.skill} className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-900 border border-green-500 shadow-green-500 p-6 flex flex-col items-center transition-transform hover:scale-105 ">
-      <Image src={item.icon} alt={item.skill} className="w-16 h-16 mb-4" />
+    <div key={item.skill} className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-900 border border-green-500 shadow-green-500 p-6 flex flex-col items-center transition-transform hover:scale-105">
+      <Image 
+        src={item.icon} 
+        alt={item.skill} 
+        width={64} // Specify width
+        height={64} // Specify height
+        className="mb-4" 
+      />
       <div className="px-6 py-4 flex flex-col h-full">
         <div className="font-bold text-xl mb-2 text-center text-white">{item.skill}</div>
         <p className="text-gray-300 text-base mb-4 flex-grow">
@@ -288,12 +323,12 @@ export default function Home() {
               {action.label}
             </a>
           ))}
-          
         </div>
       </div>
     </div>
   ))}
 </div>
+
       {/* Contact Section */}
       <div id="Contact" className="bg-gradient-to-b from-gray-900 to-gray-800 pt-4">
       <div className="container mx-auto mt-14 px-4">
