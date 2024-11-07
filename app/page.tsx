@@ -1,146 +1,113 @@
 
-"use client";
-import { motion } from 'framer-motion';
-import { Code, Palette, Coffee, Rocket,Send,Mail,Phone,MapPin,Clock } from 'lucide-react';
+"use client"; 
+import { motion } from 'framer-motion'; 
+import { Code, Palette, Coffee, Rocket, Send, Mail, Phone, MapPin, Clock } from 'lucide-react'; 
+import Image from 'next/image';
 
-export default function Home() {
-  return (
-    <main className="animated-bg h-screen w-full">
-      <div>
-        <nav className="flex justify-center space-x-8 py-8 bg-black text-white">
-          <a href="#Home" className="nav-link">Home</a>
-          <a href="#About Me" className="nav-link">About Me</a>
-          <a href="#Skills" className="nav-link">Skills</a>
-          <a href="#Projects" className="nav-link">Projects</a>
-          <a href="#Contact" className="nav-link">Contact</a>
-        </nav>
-      </div>
-      
-      <div className="flex items-center justify-center gap-52 w-full pb-32 mt-24">
-        <img
-          src="images/susanmasaku.jpg"
-          alt="Susan Masaku"
-          className="w-[400px] h-[400px] rounded-full mt-12"
-        />
-        <div className="pt-20">
-          <h1 className="text-white text-center font-sans text-4xl font-dejavu typed-out">
-            <span className="text-white">Hi</span> 
-            <span className="text-white"> I'm</span> 
-            <span className="text-white"> Susan Masaku</span> 
-            <span className="text-yellow-500"> A Software Developer</span>
-          </h1>
-          <br />
-          <p className="text-left text-lg w-100 text-white">
-            I excel at crafting elegant digital experiences and<br />
-            I am proficient in various programming languages and<br />
-            technologies.
-          </p>
-          <br />
-          <div className="flex items-center gap-32">
-            <a  href="/document/Susan Masaku CV.pdf"  download className="border stroke-green-500 p-4 text-green-500 text-white rounded mr-4" >
-              Download CV
-            </a>
-            <div className="flex">
-              <a href="https://www.linkedin.com/in/susan-masaku-5506362b4/" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin.png" alt="LinkedIn" className="w-8 h-8 mx-2 glow" />
-              </a>
-              <a href="https://github.com/Susanmwende" target="_blank" rel="noopener noreferrer">
-                <img src="images/github.png " alt="GitHub" className="w-8 h-8 mx-2 glow" />
-              </a>
-              <a href="https://x.com/Susan_masaku" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.png" alt="Twitter" className="w-8 h-8 mx-2 glow" />
-              </a>
+export default function Home() { 
+    return ( 
+        <main className="animated-bg h-screen w-full"> 
+            <div> 
+                <nav className="flex justify-center space-x-8 py-8 bg-black text-white"> 
+                    <a href="#Home" className="nav-link">Home</a> 
+                    <a href="#About Me" className="nav-link">About Me</a> 
+                    <a href="#Skills" className="nav-link">Skills</a> 
+                    <a href="#Projects" className="nav-link">Projects</a> 
+                    <a href="#Contact" className="nav-link">Contact</a> 
+                </nav> 
+            </div> 
+
+            <div className="flex items-center justify-center gap-52 w-full pb-32 mt-24"> 
+                <Image src="/images/susanmasaku.jpg" alt="Susan Masaku" width={400} height={400} className="rounded-full mt-12" /> 
+                <div className="pt-20"> 
+                    <h1 className="text-white text-center font-sans text-4xl font-dejavu typed-out"> 
+                        <span className="text-white">Hi</span> 
+                        <span className="text-white"> I&apos;m</span> 
+                        <span className="text-white"> Susan Masaku</span> 
+                        <span className="text-yellow-500"> A Software Developer</span> 
+                    </h1> 
+                    <br /> 
+                    <p className="text-left text-lg w-100 text-white"> I excel at crafting elegant digital experiences and<br /> I am proficient in various programming languages and<br /> technologies. </p> 
+                    <br /> 
+
+                    <div className="flex items-center gap-32"> 
+                        <a href="/document/Susan Masaku CV.pdf" download className="border stroke-green-500 p-4 text-green-500 text-white rounded mr-4" > Download CV </a> 
+
+                        <div className="flex"> 
+                            <a href="https://www.linkedin.com/in/susan-masaku-5506362b4/" target="_blank" rel="noopener noreferrer"> 
+                                <Image src="/images/linkedin.png" alt="LinkedIn" width={32} height={32} className="mx-2 glow" /> 
+                            </a> 
+
+                            <a href="https://github.com/Susanmwende" target="_blank" rel="noopener noreferrer"> 
+                                <Image src="/images/github.png " alt="GitHub" width={32} height={32} className="mx-2 glow" /> 
+                            </a> 
+
+                            <a href="https://x.com/Susan_masaku" target="_blank" rel="noopener noreferrer"> 
+                                <Image src="/images/twitter.png" alt="Twitter" width={32} height={32} className="mx-2 glow" /> 
+                            </a> 
+                        </div> 
+                    </div> 
+                </div> 
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* About Me Section */}
-      <div id="About Me" className=''>
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="max-w-7xl mx-64 "
-      >
-        <h1 className="font-bold text-4xl text-white  text-center mb-12">
-          About Me
-        </h1>
-        
-        <div className="grid lg:grid-cols-2 gap-48 items-start "> {/* Adjusted gap here */}
-          {/* Text Section on the Left */}
-          <div className="space-y-6 w-[600px] mr-96 pt-12">
-            <motion.p 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg text-white "
-            >
-              Hi there! I'm a passionate creator at the intersection of design and technology. With a keen eye for aesthetics and a love for clean code, I craft digital experiences that are both beautiful and functional.
-            </motion.p>
-            <motion.p 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="text-lg text-white"
-            >
-              My journey in the world of web development has been fueled by curiosity and a constant desire to learn. From responsive layouts to interactive interfaces, I love bringing ideas to life in the browser.
-            </motion.p>
-            <motion.p 
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              className="text-lg text-white"
-            >
-              When I'm not coding or pushing pixels, you'll find me exploring new design trends, tinkering with the latest web technologies, or seeking inspiration in the world around me. Let's create something amazing together!
-            </motion.p>
-          </div>
+            {/* About Me Section */} 
+            <div id="About Me" className=''> 
+                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="max-w-7xl mx-64 " > 
+                    <h1 className="font-bold text-4xl text-white text-center mb-12"> About Me </h1> 
 
-          {/* Icon Section on the Right */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className=" bg-gray-900 p-6 rounded-2xl shadow-lg backdrop-filter backdrop-blur-lg ml-48 w-[500px] "
-          >
-            <img
-              src="/images/about-me.png"
-              alt="Your Name"
-              className="w-48 h-48 rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-lg"
-            />
-            <h2 className="text-3xl font-bold text-white text-center mb-4">Susan Masaku</h2>
-            <p className="text-lg text-gray-300 text-center mb-6">
-              UX/UI Designer & Front-End Developer
-            </p>
-            <div className="flex justify-center space-x-4">
-              {/* Directly using icons */}
-              <div className="flex flex-col items-center">
-                <div className="bg-green-500 shadow-green-500 p-3 rounded-full mb-2">
-                  <Code size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-300">Code</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="bg-green-500 p-3 rounded-full mb-2">
-                  <Palette size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-300">Design</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="bg-green-500 p-3 rounded-full mb-2">
-                  <Coffee size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-300">Coffee</span>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="bg-green-500 p-3 rounded-full mb-2">
-                  <Rocket size={24} className="text-white" />
-                </div>
-                <span className="text-sm text-gray-300">Innovation</span>
-              </div>
+                    <div className="grid lg:grid-cols-2 gap-48 items-start "> 
+
+                        {/* Text Section on the Left */} 
+                        <div className="space-y-6 w-[600px] mr-96 pt-12"> 
+                            <motion.p initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }} className="text-lg text-white " > Hi there! I&apos;m a passionate creator at the intersection of design and technology. With a keen eye for aesthetics and a love for clean code, I craft digital experiences that are both beautiful and functional. </motion.p>
+
+                            <motion.p initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.4 }} className="text-lg text-white" > My journey in the world of web development has been fueled by curiosity and a constant desire to learn. From responsive layouts to interactive interfaces, I love bringing ideas to life in the browser. </motion.p>
+
+                            <motion.p initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.6 }} className="text-lg text-white" > When I&apos;m not coding or pushing pixels, you&apos;ll find me exploring new design trends, tinkering with the latest web technologies, or seeking inspiration in the world around me. Let&apos;s create something amazing together! </motion.p>
+                        </div>
+
+                        {/* Icon Section on the Right */} 
+                        <motion.div whileHover={{ scale: 1.05 }} className=" bg-gray-900 p-6 rounded-2xl shadow-lg backdrop-filter backdrop-blur-lg ml-48 w-[500px] " > 
+                            <Image src="/images/about-me.png" alt="Your Name" width={192} height={192} className="rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-lg" /> 
+
+                            <h2 className="text-3xl font-bold text-white text-center mb-4">Susan Masaku</h2>
+                            <p className="text-lg text-gray-300 text-center mb-6"> UX/UI Designer | Front-End Developer | Backend Developer | Product Manager </p>
+
+                            <div className="flex justify-center space-x-4"> 
+
+                                {/* Directly using icons */}  
+                                <div className="flex flex-col items-center">  
+                                    <div className="bg-green-500 shadow-green-500 p-3 rounded-full mb-2">  
+                                        <Code size={24} className="text-white" />  
+                                    </div>  
+                                    <span className="text-sm text-gray-300">Code</span>  
+                                </div>
+
+                                <div className="flex flex-col items-center">  
+                                    <div className="bg-green-500 p-3 rounded-full mb-2">  
+                                        <Palette size={24} className="text-white" />  
+                                    </div>  
+                                    <span className="text-sm text-gray-300">Design</span>  
+                                </div>
+
+                                <div className="flex flex-col items-center">  
+                                    <div className="bg-green-500 p-3 rounded-full mb-2">  
+                                        <Coffee size={24} className="text-white" />  
+                                    </div>  
+                                    <span className="text-sm text-gray-300">Coffee</span>  
+                                </div>
+
+                                <div className="flex flex-col items-center">  
+                                    <div className="bg-green-500 p-3 rounded-full mb-2">  
+                                        <Rocket size={24} className= "text-white"/>  
+                                    </div>
+                                    <span className= "text-sm text-gray-300 ">Innovation</span>
+                                </div>
+                            </div>
+                        </motion.div>
+                    </div>
+                </motion.div>
             </div>
-          </motion.div>
-        </div>
-      </motion.div>
-    </div>
 {/* Experience Section */}
 <div id="Skills" className="mt-48 pb-48">
   <h1 className="font-bold text-4xl text-white mb-12 text-center ">Skills</h1>
