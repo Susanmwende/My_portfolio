@@ -124,7 +124,7 @@ export default function Home() {
           { title: "DOM Manipulation", icon: "images/dom-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -142,7 +142,7 @@ export default function Home() {
           { title: "Forms & Templates", icon: "images/form-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -160,7 +160,7 @@ export default function Home() {
           { title: "Agile", icon: "images/agile-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -178,7 +178,7 @@ export default function Home() {
           { title: "Adobe Photoshop", icon: "images/photoshop-icon.svg" },
         ].map((item) => (
           <div key={item.title} className="flex flex-col items-center text-center p-2 hover:bg-gray-800 rounded-lg transition-colors">
-            <img src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
+            <Image src={item.icon} alt={item.title} className="w-12 h-12 mb-2" />
             <h3 className="text-white text-sm font-semibold">{item.title}</h3>
           </div>
         ))}
@@ -230,7 +230,7 @@ export default function Home() {
     }
   ].map(item => (
     <div key={item.skill} className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-900 border border-green-500 shadow-green-500 p-6 flex flex-col items-center transition-transform hover:scale-105 ">
-      <img src={item.icon} alt={item.skill} className="w-16 h-16 mb-4" />
+      <Image src={item.icon} alt={item.skill} className="w-16 h-16 mb-4" />
       <div className="px-6 py-4 flex flex-col h-full">
         <div className="font-bold text-xl mb-2 text-center text-white">{item.skill}</div>
         <p className="text-gray-300 text-base mb-4 flex-grow">
