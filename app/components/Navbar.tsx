@@ -14,7 +14,7 @@ const Navbar = () => {
           <nav className="flex items-center justify-between py-4 px-6 bg-black text-white">
             <div className="flex items-center">
               <a className="navbar-brand" href="#Home">
-                <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
+                <Image src="/images/Logo.png" alt="Logo" width={100} height={100} />
               </a>
             </div>
   
