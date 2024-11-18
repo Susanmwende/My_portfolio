@@ -1,27 +1,28 @@
 "use client";
-import Image from 'next/image'; 
+import Image from 'next/image';
 
 const Homepage = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-16 md:flex-row md:gap-52 w-full pb-32 mt-24
+    <div className="flex flex-col items-center justify-center gap-16 md:flex-row md:gap-52 w-full pb-36 mt-24
       sm:gap-8 sm:pb-24 sm:mt-16
       lg:pb-28 lg:gap-40">
+
       <Image 
         src="/images/susanmasaku.jpg" 
         alt="Susan Masaku" 
         width={400} 
         height={400} 
         className="profile-image rounded-full mt-12
-          sm:w-[300px] sm:h-[300px] sm:mt-8
-          md:w-[350px] md:h-[350px]
-          lg:w-[400px] lg:h-[400px]"
+          sm:w-[250px] sm:h-[250px] sm:mt-8
+          md:w-[300px] md:h-[300px]
+          lg:w-[350px] lg:h-[350px]
+          xl:w-[400px] xl:h-[400px]"
       />
+      
       <div className="pt-20 text-center md:text-left
         sm:pt-16
         lg:pt-20">
-        <h1 className="text-white font-sans text-4xl font-dejavu typed-out
-          sm:text-3xl
-          md:text-4xl">
+        <h1 className="text-white font-sans text-4xl font-dejavu typed-out">
           <span className="text-white">Hi</span> 
           <span className="text-white"> I am</span> 
           <span className="text-white"> Susan Masaku</span> 
@@ -40,7 +41,7 @@ const Homepage = () => {
           <a href="/document/Susan Masaku CV.pdf" download className="border stroke-green-500 p-4 text-green-500 text-white rounded mr-4">
             Download CV
           </a>
-          <div className="flex space-x-4">
+          <div className="flex space-x-4 justify-center md:justify-start mt-4 md:mt-0">
             <a href="https://www.linkedin.com/in/susan-masaku-5506362b4/" target="_blank" rel="noopener noreferrer">
               <Image src="/images/linkedin.png" alt="LinkedIn" width={32} height={32} className="mx-2 glow" />
             </a>
@@ -53,6 +54,8 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+
+
     </div>
   );
 };
